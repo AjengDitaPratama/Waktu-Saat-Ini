@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package waktusaatini;
+
+/**
+ *
+ * @author LENOVO
+ * Nama : Ajeng Dita Pratama
+ * Kelas : Sistem Informasi
+ * NIM : 23176009
+ * Deskripsi program : Program ini berisi program untuk menampilkan
+ * waktu saat ini
+ */
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+public class WaktuSaatIni {
+
+    public static void main(String[] args) {
+        Date sekarang = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("EEEE, dd MMM yyyy HH:mm:ss", new Locale("id", "ID"));
+        String waktu = formatter.format(sekarang);
+
+        System.out.println("Hari ini adalah hari : " + waktu);
+        System.out.println("BUILD SUCCESSFUL");
+    }
+}
